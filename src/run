@@ -1,0 +1,9 @@
+
+# server:
+cargo run --release -p chess_server
+
+# client (ui):
+cargo run --release -p chess_client_ui
+
+# client cli:
+cargo run --release -p chess_client_cli -- <name> <host>

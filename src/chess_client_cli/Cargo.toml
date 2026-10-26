@@ -1,0 +1,19 @@
+[package]
+name = "chess_client_cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "chess_client_cli"
+path = "src/main.rs"
+
+[dependencies]
+chess_logic = { path = "../chess_logic" }
+chess_protocol = { path = "../chess_protocol" }
+chess_client_net = { path = "../chess_client_net" }
+
+tokio = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }

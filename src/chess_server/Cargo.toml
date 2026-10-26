@@ -1,0 +1,26 @@
+[package]
+name = "chess_server"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "chess_server"
+path = "src/main.rs"
+
+[dependencies]
+chess_logic = { path = "../chess_logic" }
+chess_protocol = { path = "../chess_protocol" }
+
+tokio = { workspace = true, features = ["signal"] }
+tokio-util.workspace = true
+futures.workspace = true
+bytes.workspace = true
+
+serde.workspace = true
+serde_json.workspace = true
+
+anyhow.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+

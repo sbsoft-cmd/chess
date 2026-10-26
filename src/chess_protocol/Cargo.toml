@@ -1,0 +1,10 @@
+[package]
+name = "chess_protocol"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+chess_logic = { path = "../chess_logic" }
+serde = { workspace = true }
+serde_json = { workspace = true }
